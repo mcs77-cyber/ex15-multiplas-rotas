@@ -20,8 +20,10 @@ app.get('/sobre',(req,res) =>
 app.get('/contato',(req,res) => 
     app.res("Contato")
 )
-app.use((req, res) => {
-  res.status(404).send('Oops! Essa pagina é inexistente');
-});
+
+app.get('/rota-inexistente',(req,res) => 
+    app.status(404).res("erro")
+)
+
 
 app.listen(3000, () => console.log('Servidor rodando em http://localhost:3000'));
