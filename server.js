@@ -9,7 +9,7 @@ const app = express();
 // Rotas não mapeadas → 404 automático do Express
 
 app.get('/',(req,res) => 
-    app.res("Home")
+    res.send("Home")
 )
 
 app.get('/sobre',(req,res) => 
