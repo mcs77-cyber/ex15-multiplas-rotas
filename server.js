@@ -21,7 +21,7 @@ app.get('/contato',(req,res) =>
     app.res("Contato")
 )
 app.use((req, res) => {
-  res.status(404).send('Oops! Essa paigna é inexistente');
+  res.status(404).send('Oops! Essa pagina é inexistente');
 });
 
 app.listen(3000, () => console.log('Servidor rodando em http://localhost:3000'));
