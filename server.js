@@ -13,12 +13,12 @@ app.get('/',(req,res) =>
 )
 
 app.get('/sobre',(req,res) => 
-    app.res("Sobre")
+    res.send("Sobre")
 )
 
 
 app.get('/contato',(req,res) => 
-    app.res("Contato")
+    res.send("Contato")
 )
 app.use((req, res) => {
   res.status(404).send('Oops! Essa pagina é inexistente');
